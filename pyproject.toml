@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rrsmr-ads"
+version = "0.1.0"
+description = "ADS Rolls-Royce SMR grid modelling project"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+    "plotly>=5.18",
+    "streamlit>=1.35",
+    "PyYAML>=6.0",
+    "xarray>=2024.0",
+    "netCDF4>=1.6",
+    "openpyxl>=3.1",
+    "dask>=2024.0",
+    "pyproj>=3.6"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

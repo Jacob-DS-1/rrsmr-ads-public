@@ -1,0 +1,5 @@
+dataset,columns_checked,missing_values,status,notes
+obj2_demand,all source columns,0,pass,Validated directly from parquet input.
+obj1_generation,all source columns,0,pass,Validated directly from parquet input.
+owner2_smr_fleet,all source columns,0,pass,Validated directly from parquet input.
+grid_master_hourly_2030_2045,required final columns,0,pass,Required fields after all joins.

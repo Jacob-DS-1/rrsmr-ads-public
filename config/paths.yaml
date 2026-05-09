@@ -1,0 +1,36 @@
+data:
+  raw: "data/raw"
+  interim: "data/interim"
+  processed: "data/processed"
+  external: "data/external"
+
+outputs:
+  figures: "outputs/figures"
+  tables: "outputs/tables"
+  presentations: "outputs/presentations"
+  objective1_generation: "outputs/objective1_generation"
+
+docs:
+  validation: "docs/validation"
+  references: "docs/references"
+
+preprocessing_outputs:
+  demand_hist_hourly: "data/processed/preprocessing/demand_hist_hourly.parquet"
+  demand_hist_daily: "data/processed/preprocessing/demand_hist_daily.parquet"
+  demand_hourly_shape_library: "data/processed/preprocessing/demand_hourly_shape_library.parquet"
+  genmix_hist_hourly: "data/processed/preprocessing/genmix_hist_hourly.parquet"
+  genmix_profile_library: "data/processed/preprocessing/genmix_profile_library.parquet"
+  fes_demand_annual: "data/processed/preprocessing/fes_demand_annual_2030_2045.parquet"
+  fes_supply_annual: "data/processed/preprocessing/fes_supply_annual_2030_2045.parquet"
+  weather_hist_daily: "data/processed/preprocessing/weather_hist_daily.parquet"
+  weather_future_daily: "data/processed/preprocessing/weather_future_daily_ukcp18.parquet"
+  era5_resource_hourly: "data/processed/preprocessing/era5_resource_hourly_gb_2010_2024.parquet"
+  calendar_hourly: "data/processed/preprocessing/calendar_hourly_2010_2045.parquet"
+
+model_outputs:
+  demand_future_hourly: "data/processed/objective2_demand/demand_future_hourly_2030_2045"
+  generation_future_hourly: "data/processed/objective1_generation/generation_future_hourly_2030_2045"
+  smr_fleet_hourly: "data/processed/objective3_smr_integration/smr_fleet_hourly_2030_2045"
+  grid_master_hourly: "data/processed/objective3_smr_integration/grid_master_hourly_2030_2045"
+  annual_summary: "outputs/tables/system_impact_summary_annual_2030_2045.csv"
+  period_summary: "outputs/tables/system_impact_summary_period_2030_2045.csv"

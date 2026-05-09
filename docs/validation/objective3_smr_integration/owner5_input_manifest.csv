@@ -1,0 +1,9 @@
+input_name,status,path,size_bytes,role,notes
+owner1_smr_assumptions,available,config/smr_assumptions.csv,not_recorded,required,"Owner 1 SMR assumptions, including unit capacity and net delivery factor."
+owner1_smr_unit_library,available,data/processed/objective3_smr_integration/smr_hourly_library_2030_2045,not_recorded,required,Owner 1 unit-level hourly SMR library with outage flags.
+owner2_smr_fleet,available,data/processed/objective3_smr_integration/smr_fleet_hourly_2030_2045,not_recorded,required,Owner 2 fleet-level staggered SMR output.
+owner3_grid_master,available,data/processed/objective3_smr_integration/grid_master_hourly_2030_2045,not_recorded,required,Owner 3 integrated hourly master dataset.
+owner3_input_alignment_qa,available,docs/validation/objective3_smr_integration/input_alignment_qa_log.md,not_recorded,supporting,Owner 3 alignment QA evidence.
+system_impact_hourly_2030_2045,available,data/processed/objective3_smr_integration/system_impact_hourly_2030_2045,not_recorded,repo_generated_owner4_input,Repo-generated Owner/Part 4 hourly system impact metrics.
+system_impact_summary_annual_2030_2045,available,data/processed/objective3_smr_integration/system_impact_summary_annual_2030_2045.csv,not_recorded,repo_generated_owner4_input,Repo-generated Owner/Part 4 annual system impact summary.
+system_impact_summary_period_2030_2045,available,data/processed/objective3_smr_integration/system_impact_summary_period_2030_2045.csv,not_recorded,repo_generated_owner4_input,Repo-generated Owner/Part 4 period system impact summary.

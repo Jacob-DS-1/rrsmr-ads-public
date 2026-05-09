@@ -1,0 +1,11 @@
+check_name,status,expected,observed,notes
+owner4_hourly_case_coverage,pass,Owner 4 delivered case coverage documented,simultaneous_commissioning; staggered_commissioning,Repo-generated Owner/Part 4 contains both reconciled SMR cases; Owner 5 filters to the base case for reconciliation and rebuilds the visualisation sensitivity package.
+owner5_metrics_row_count,pass,3366144,3366144,timestamps x FES scenarios x climate members x two weather roles x two SMR cases.
+owner5_metrics_duplicate_key,pass,0,0,Final Owner 5 visualisation/sensitivity key.
+owner5_metrics_missing_values,pass,0,0,All generated Owner 5 metric columns checked.
+owner4_hourly_recomputed_alignment,pass,max absolute diff <= 1e-6,0.0,Compared 841536 average_wind + staggered rows against Owner 4 hourly metrics.
+weather_role_coverage,pass,average_wind; low_wind,average_wind; low_wind,average_wind is the main model; low_wind is used for sensitivity case-study charts.
+smr_case_coverage,pass,staggered_commissioning; simultaneous_commissioning,simultaneous_commissioning; staggered_commissioning,Simultaneous case is generated only inside Owner 5 as a stress-test.
+annual_summary_rows,pass,384,384,16 years x 2 FES x 3 climate members x 2 weather roles x 2 SMR cases.
+period_summary_rows,pass,24,24,2 FES x 3 climate members x 2 weather roles x 2 SMR cases.
+figure_outputs,pass,at least 5 graphical assets,5,Includes standard visualisations and low-wind sensitivity case study.

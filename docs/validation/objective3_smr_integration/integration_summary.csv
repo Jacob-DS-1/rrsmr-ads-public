@@ -1,0 +1,5 @@
+dataset,check_name,status,expected,observed,notes
+grid_master_hourly_2030_2045,final_rows,pass,2524608,2524608,Full retained scenario skeleton.
+grid_master_hourly_2030_2045,final_key,pass,timestamp_utc + fes_scenario + climate_member + weather_year_role + smr_case,timestamp_utc + fes_scenario + climate_member + weather_year_role + smr_case,Matches team-agreed Owner 3 key.
+owner2_smr_fleet,unit_total_reconciliation,pass,max unit sum diff <= 1e-6 MW,0.0,unit1 + unit2 + unit3 equals smr_total_delivered_mw.
+grid_master_hourly_2030_2045_partitioned,partitioned_parquet_output,pass,partitioned Parquet dataset,year + fes_scenario + smr_case,Performance-oriented companion output; single-file parquet is retained for simple handoff.

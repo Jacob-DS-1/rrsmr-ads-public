@@ -1,0 +1,11 @@
+neso_source,internal_name,model_column,role,fes_target_techs,is_anchored_to_fes,notes
+WIND + WIND_EMB,wind_total_mw,wind_mw,renewable,Onshore Wind|Offshore Wind,True,"Wind: ML CF + baseline shape adjustment, anchored to FES TWh."
+SOLAR,solar_mw,solar_mw,renewable,Solar PV,True,"Solar PV: ML CF + baseline shape adjustment, anchored to FES TWh."
+NUCLEAR,nuclear_mw,nuclear_existing_mw,dispatchable_existing,Nuclear,True,Existing nuclear fleet baseline. SMR contribution added in Obj 3.
+BIOMASS,biomass_mw,biomass_mw,dispatchable,Biomass|CCS Biomass|Waste,True,Biomass + CCS biomass + waste rolled up to one anchored series.
+HYDRO,hydro_mw,hydro_mw,dispatchable,Hydro,True,"Hydro generation, anchored to FES Hydro TWh."
+OTHER,other_mw,other_mw,dispatchable,Other Renewable|Other Thermal|Hydrogen,True,Aggregates Other Renewable + Other Thermal + Hydrogen FES targets.
+STORAGE,storage_net_mw,storage_net_mw,storage,Battery|Long Duration Energy Storage,True,"Net storage. Sign: + = generation/discharge to grid, - = pumping/charge. Anchored to (Battery + LDES) FES TWh."
+GAS,gas_mw,gas_reference_mw,reference,Gas|CCS Gas,False,Reference / diagnostic only -- gas is the balancing source in Obj 3. Annual energy is capped at FES (Gas + CCS Gas) TWh as a sanity scale but not used for system balance in Obj 1.
+COAL,coal_mw,coal_reference_mw,reference,,False,Reference / diagnostic only. FES contains no Coal entry; the historic p50 profile is carried forward unscaled (no placeholder multiplier).
+IMPORTS (DUKES 5.13),imports_net_mw,imports_net_baseline_mw,imports_baseline,,False,"Net imports baseline. Sign: + = importing to GB, - = exporting. Annual energy comes from the DUKES 5.13 2020-2024 mean Total; the hourly shape comes from the historic p50 profile."

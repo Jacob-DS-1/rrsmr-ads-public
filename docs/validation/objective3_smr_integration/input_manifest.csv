@@ -1,0 +1,6 @@
+input_name,status,path,size_bytes,role,description,notes
+obj1_supply,available,data/processed/objective1_generation/generation_future_hourly_2030_2045,not_recorded,required_for_final_integration,Objective 1 final future hourly supply,Keyed by timestamp_utc + year + fes_scenario + weather_year_role.
+obj1_qa_notes,available,docs/validation/objective1_generation/qa_notes.md,not_recorded,supporting_evidence,Objective 1 QA notes,"Documents calendar, duplicate-key, sign, and reconciliation QA."
+obj2_demand,available,data/processed/objective2_demand/demand_future_hourly_2030_2045,not_recorded,required_for_final_integration,Objective 2 final future hourly demand,Keyed by timestamp_utc + year + fes_scenario + climate_member.
+obj2_qa_summary,available,docs/validation/objective2_demand/demand_future_hourly_2030_2045_QA_summary.csv,not_recorded,supporting_evidence,Objective 2 QA summary,"Documents row count, timestamp coverage, scenario count, member count, and reconciliation."
+owner2_smr_fleet,available,data/processed/objective3_smr_integration/smr_fleet_hourly_2030_2045,not_recorded,required_for_final_integration,Owner 2 SMR fleet hourly scenario output,Actual file is adapted from unit_1_mw/unit_2_mw/unit_3_mw/total_fleet_mw naming.

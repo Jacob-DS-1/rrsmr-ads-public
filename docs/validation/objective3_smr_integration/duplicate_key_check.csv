@@ -1,0 +1,5 @@
+dataset,key_columns,duplicate_count,status,notes
+obj2_demand,timestamp_utc; year; fes_scenario; climate_member,0,pass,Validated directly from parquet input.
+obj1_generation,timestamp_utc; year; fes_scenario; weather_year_role,0,pass,Validated directly from parquet input.
+owner2_smr_fleet,timestamp_utc; year; fes_scenario; smr_case,0,pass,Validated directly from parquet input.
+grid_master_hourly_2030_2045,timestamp_utc; fes_scenario; climate_member; weather_year_role; smr_case,0,pass,Final agreed Owner 3 key.

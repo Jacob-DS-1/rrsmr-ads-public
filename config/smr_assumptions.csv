@@ -1,0 +1,7 @@
+unit_id,smr_case,unit_name,nameplate_mwe,net_delivery_factor,commissioning_date,planned_outage_window,planned_outage_frequency_months,forced_outage_rate,notes
+unit_1,staggered_commissioning,wylfa_smr_1,470,1.0,2035-01-01,18,24,0.02,"Base case: 470 MW net delivered when online, 18-day planned outage every 24 months, 2% deterministic forced-outage loss"
+unit_2,staggered_commissioning,wylfa_smr_2,470,1.0,2036-01-01,18,24,0.02,"Base case: 470 MW net delivered when online, 18-day planned outage every 24 months, 2% deterministic forced-outage loss"
+unit_3,staggered_commissioning,wylfa_smr_3,470,1.0,2037-01-01,18,24,0.02,"Base case: 470 MW net delivered when online, 18-day planned outage every 24 months, 2% deterministic forced-outage loss"
+unit_1,simultaneous_commissioning,wylfa_smr_1,470,1.0,2035-01-01,18,24,0.02,Sensitivity case: simultaneous commissioning with the same availability assumptions as the base case
+unit_2,simultaneous_commissioning,wylfa_smr_2,470,1.0,2035-01-01,18,24,0.02,Sensitivity case: simultaneous commissioning with the same availability assumptions as the base case
+unit_3,simultaneous_commissioning,wylfa_smr_3,470,1.0,2035-01-01,18,24,0.02,Sensitivity case: simultaneous commissioning with the same availability assumptions as the base case

@@ -1,0 +1,27 @@
+# Core data stack
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14.0
+PyYAML>=6.0
+
+# Modelling and analysis
+scikit-learn>=1.3
+xgboost>=2.0
+lightgbm>=4.0
+pygam>=0.9
+matplotlib>=3.7
+
+# Notebook/runtime support
+jupyter>=1.0
+ipykernel>=6.0
+
+# Tests
+pytest>=8.0
+# Preprocessing source formats
+xarray>=2024.0
+netCDF4>=1.6
+openpyxl>=3.1
+dask>=2024.0
+pyproj>=3.6
+streamlit>=1.35
+plotly>=5.18

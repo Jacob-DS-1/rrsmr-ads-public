@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments and secrets
+.venv/
+venv/
+env/
+.conda/
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data directories: keep placeholders only
+data/external/*
+!data/external/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated outputs: keep placeholders only
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/presentations/*
+!outputs/presentations/.gitkeep
+outputs/tables/*
+!outputs/tables/.gitkeep
+
+# External restored source inputs
+external_data/
+source_inputs/
+
+# Large/generated data formats
+*.parquet
+*.feather
+*.nc
+*.grib
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Logs/caches
+*.log
+logs/
+cache/
+tmp/
+temp/
+
+# Dashboard generated artifacts
+dashboard/**/dist/
+dashboard/**/build/
+dashboard/**/.next/
+dashboard/**/node_modules/
+
+# Keep curated validation evidence
+!docs/validation/
+!docs/validation/**/
+!docs/validation/**/*.csv
+!docs/validation/**/*.md
+
+# Objective-specific generated outputs
+data/processed/objective1_generation/
+data/processed/objective2_demand/
+data/processed/objective3_smr_integration/
+outputs/objective1_generation/
+outputs/objective2_demand/
+outputs/objective3_smr_integration/

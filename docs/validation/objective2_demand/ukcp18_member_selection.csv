@@ -1,0 +1,4 @@
+climate_member,member_number,temperature_rank,selection_role,selection_basis,selected_flag,mean_tmean_gb_c,median_tmean_gb_c,winter_mean_tmean_gb_c,summer_mean_tmean_gb_c,mean_annual_hdd,mean_annual_cdd
+member_12,12,1,cool,Lowest mean_tmean_gb_c across members over 2030-2045,1,9.109583172449017,8.410102936603558,3.9038078525804245,15.2476175383308,2443.2725204476856,1.164969362617727
+member_06,6,7,median,Median-ranked member by mean_tmean_gb_c over 2030-2045,1,10.819062138356381,10.267989739018782,5.894307014957242,16.669567368735404,1907.369813995254,2.8095377881722827
+member_13,13,12,warm,Highest mean_tmean_gb_c across members over 2030-2045,1,11.547843005253124,10.66667084360991,5.6944185910348395,18.337146721308542,1788.117403251186,13.426032169498082

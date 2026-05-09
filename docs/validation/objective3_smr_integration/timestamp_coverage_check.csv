@@ -1,0 +1,4 @@
+dataset,expected_start_utc,expected_end_utc,unique_timestamps,missing_timestamps,extra_timestamps,status,notes
+obj2_demand,2030-01-01 00:00:00+00:00,2045-12-31 23:00:00+00:00,140256,0,0,pass,Validated directly from parquet input.
+obj1_generation,2030-01-01 00:00:00+00:00,2045-12-31 23:00:00+00:00,140256,0,0,pass,Validated directly from parquet input.
+owner2_smr_fleet,2030-01-01 00:00:00+00:00,2045-12-31 23:00:00+00:00,140256,0,0,pass,Validated directly from parquet input.

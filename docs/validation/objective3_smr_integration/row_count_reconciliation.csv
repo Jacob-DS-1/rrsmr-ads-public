@@ -1,0 +1,5 @@
+dataset,expected_rows,observed_rows,status,notes
+obj2_demand,native upstream row count,841536,pass,Key columns: timestamp_utc; year; fes_scenario; climate_member
+obj1_generation,native upstream row count,841536,pass,Key columns: timestamp_utc; year; fes_scenario; weather_year_role
+owner2_smr_fleet,native upstream row count,561024,pass,Key columns: timestamp_utc; year; fes_scenario; smr_case
+grid_master_hourly_2030_2045,5049216,5049216,pass,Full cross product: timestamps x scenarios x climate_members x weather_year_roles x smr_cases.

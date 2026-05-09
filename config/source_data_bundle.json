@@ -1,0 +1,19 @@
+{
+  "bundle_name": "rrsmr-source-inputs-final-delivery",
+  "version": "final-delivery",
+  "archive_filename": "rrsmr-source-inputs-final-delivery.zip",
+  "archive_url": "https://zenodo.org/records/20073518/files/rrsmr-source-inputs-final-delivery.zip?download=1",
+  "archive_sha256": "39666204bed374e6bda724f13a02daac920c86347fd8c7d70d358a9837b8219c",
+  "archive_doi": "10.5281/zenodo.20073518",
+  "archive_landing_url": "https://doi.org/10.5281/zenodo.20073518",
+  "required_directories": [
+    "objective1_raw",
+    "ERA5"
+  ],
+  "restore_destination": "external_data/source_inputs",
+  "notes": [
+    "The public source-input bundle is hosted on Zenodo.",
+    "Restore the bundle to external_data/source_inputs using scripts/prepare_source_inputs.py.",
+    "Do not commit the archive or the restored external_data directory to Git."
+  ]
+}

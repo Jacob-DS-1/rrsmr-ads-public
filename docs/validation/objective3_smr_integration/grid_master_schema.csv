@@ -1,0 +1,24 @@
+column_name,dtype,required,description,category
+timestamp_utc,"datetime64[ns, UTC]",yes,Hour-beginning UTC timestamp.,identifier
+year,int,yes,Calendar year derived from timestamp_utc.,identifier
+fes_scenario,string,yes,FES scenario: Electric Engagement or Holistic Transition.,identifier
+climate_member,string,yes,Selected UKCP18 climate member from Objective 2.,identifier
+weather_year_role,string,yes,"Objective 1 supply weather role: low_wind, average_wind, high_wind.",identifier
+weather_year,int,yes,Representative historical weather year behind weather_year_role.,identifier
+smr_case,string,yes,SMR deployment case from Owner 2.,identifier
+demand_mw,float64,yes,Future hourly GB National Demand.,demand
+wind_mw,float64,yes,Objective 1 wind supply.,supply
+solar_mw,float64,yes,Objective 1 solar supply.,supply
+nuclear_existing_mw,float64,yes,"Existing nuclear baseline, excluding new SMRs.",supply
+biomass_mw,float64,yes,Objective 1 biomass/waste supply.,supply
+hydro_mw,float64,yes,Objective 1 hydro supply.,supply
+other_mw,float64,yes,Objective 1 other renewable/thermal/hydrogen supply.,supply
+imports_net_baseline_mw,float64,yes,Static net import baseline; positive means import to GB.,supply
+storage_net_mw,float64,optional,Objective 1 storage net output; positive means discharge.,diagnostic_supply
+gas_reference_mw,float64,optional,Diagnostic gas reference only; not Owner 4 gas-needed result.,diagnostic_supply
+coal_reference_mw,float64,optional,Diagnostic historic coal reference.,diagnostic_supply
+unit1_delivered_mw,float64,yes,SMR unit 1 delivered MW after Owner 2 adaptation.,smr
+unit2_delivered_mw,float64,yes,SMR unit 2 delivered MW after Owner 2 adaptation.,smr
+unit3_delivered_mw,float64,yes,SMR unit 3 delivered MW after Owner 2 adaptation.,smr
+smr_total_delivered_mw,float64,yes,Fleet-level SMR delivered output from Owner 2.,smr
+exogenous_supply_mw,float64,yes,wind + solar + nuclear_existing + biomass + hydro + other.,derived

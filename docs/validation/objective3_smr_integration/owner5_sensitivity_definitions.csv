@@ -1,0 +1,5 @@
+dimension,definition,notes
+main_model,average_wind + staggered_commissioning,Uses Owner 4 delivered hourly system impact metrics as the base case.
+smr_deployment_sensitivity,simultaneous_commissioning,"Owner 5 stress-test: all three SMRs online from 2035-01-01 with same capacity, net delivery factor, and outage assumptions."
+supply_sensitivity,weather_year_role == low_wind,Used for low-wind pressure-day case-study visualisation.
+low_wind_flag_threshold_mw,wind_mw <= 12085.499343,Threshold inferred from Owner 4 low_wind_flag alignment with Owner 3 average_wind wind_mw.

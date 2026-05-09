@@ -1,0 +1,5 @@
+dimension,count,values,status,notes
+fes_scenario,2,Electric Engagement; Holistic Transition,pass,Allowed FES scenarios only.
+climate_member,3,member_06; member_12; member_13,pass,Objective 2 selected UKCP18 climate members.
+weather_year_role,3,average_wind; high_wind; low_wind,pass,Objective 1 retained supply weather roles.
+smr_case,2,simultaneous_commissioning; staggered_commissioning,pass,Owner 2 supplied SMR cases. Current file includes both commissioning cases.
